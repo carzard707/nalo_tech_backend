@@ -5,21 +5,21 @@
  
  The sql database name as per this project is "nalo_tech", host being "localhost", user being "root". for the password, do specify the pasword of the user you have used for the database. You can also change the detils to fit you setup system.
  
-There should be only one table in the database, the "phonenumbers" table as shown below
-+---------------------+
-| Tables_in_nalo_tech | \n
-+---------------------+\n
-| phonenumbers        |\n
-+---------------------+\n
+There should be only one table in the database, the "phonenumbers" table as shown below<br/>
++---------------------+<br/>
+| Tables_in_nalo_tech |<br/>
++---------------------+<br/>
+| phonenumbers        |<br/>
++---------------------+<br/>
  
- the attributes of the table,"phonenumbers", are also show below
- +-------------+--------------+------+-----+---------+----------------+
-| Field       | Type         | Null | Key | Default | Extra          |
-+-------------+--------------+------+-----+---------+----------------+
-| NumberID    | int          | NO   | PRI | NULL    | auto_increment |
-| PhoneNumber | varchar(20)  | NO   |     | NULL    |                |
-| UserName    | varchar(255) | NO   |     | NULL    |                |
-+-------------+--------------+------+-----+---------+----------------+
+ the attributes of the table,"phonenumbers", are also show below<br/>
+ +-------------+--------------+------+-----+---------+----------------+<br/>
+| Field       | Type         | Null | Key | Default | Extra          |<br/>
++-------------+--------------+------+-----+---------+----------------+<br/>
+| NumberID    | int          | NO   | PRI | NULL    | auto_increment |<br/>
+| PhoneNumber | varchar(20)  | NO   |     | NULL    |                |<br/>
+| UserName    | varchar(255) | NO   |     | NULL    |                |<br/>
++-------------+--------------+------+-----+---------+----------------+<br/>
 
  #REQUEST INPUTS AND OUTPUTS
  
