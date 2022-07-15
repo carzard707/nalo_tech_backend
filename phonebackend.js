@@ -61,8 +61,8 @@ router.delete('/deletePhoneNumber', (req, res)=>{
 
 });
 
-router.post('/fetchPhoneNumber', (req, res)=>{
-    let phoneNumberID = req.body.phoneNumberID;
+router.get('/fetchPhoneNumber', (req, res)=>{
+    let {phoneNumberID} = req.query;
     db.query(`select PhoneNumber from phonenumbers where NumberID = ${phoneNumberID}`,(err,result)=>{
         if(err){
             console.log(err);
@@ -127,12 +127,12 @@ router.post('/addCSVNumbers', upload.single('numbers'), function (req, res, next
         }).on('end', ()=>{
             // console.log(results);
         });
-    	res.send('received ' + req.file.originalname);
+    	res.status(201).send('received ' + req.file.originalname);
     });
     src.on('error', function(err) { res.send('Something went wrong!'); });
 
     
-  })
+})
 
 router.get('/getAllPhoneNumbers', (req, res) => {
    let { page } = req.query ;
