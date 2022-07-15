@@ -7,10 +7,10 @@
  
 There should be only one table in the database, the "phonenumbers" table as shown below
 +---------------------+
-| Tables_in_nalo_tech |
-+---------------------+
-| phonenumbers        |
-+---------------------+
+| Tables_in_nalo_tech | \n
++---------------------+\n
+| phonenumbers        |\n
++---------------------+\n
  
  the attributes of the table,"phonenumbers", are also show below
  +-------------+--------------+------+-----+---------+----------------+
